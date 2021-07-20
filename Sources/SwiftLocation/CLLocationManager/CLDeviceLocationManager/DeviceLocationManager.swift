@@ -101,10 +101,10 @@ public class DeviceLocationManager: NSObject, LocationManagerImpProtocol, CLLoca
             return
         }
         
-        guard authorizationStatus.isAuthorized == false else {
-            callback(authorizationStatus)
-            return
-        }
+//        guard authorizationStatus.isAuthorized == false else {
+//            callback(authorizationStatus)
+//            return
+//        }
      
         authorizationCallbacks.append(callback)
         manager.requestAuthorization(mode)
